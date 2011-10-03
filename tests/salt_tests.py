@@ -3,7 +3,7 @@ from nose.tools import *
 from salt import salt
 
 def clean_up_dir(d):
-    if os.path.isdir(d): os.removedirs(d)
+    if os.path.isdir(d): os.rmdir(d)
 
 def verify_env_test():
     test_file = ['/tmp/' + str(random.getrandbits(10))]
